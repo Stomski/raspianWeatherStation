@@ -1,0 +1,65 @@
+.current-weather {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.current-weather.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 24px;
+  color: #ccc;
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.temperature {
+  display: flex;
+  align-items: flex-start;
+}
+
+.temperature .value {
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.temperature .unit {
+  font-size: 40px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.weather-icon {
+  font-size: 100px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.detail-item .label {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.detail-item .value {
+  font-size: 24px;
+  font-weight: 500;
+}

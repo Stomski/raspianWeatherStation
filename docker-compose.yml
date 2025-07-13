@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  weather-station:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - WEATHER_API_KEY=${WEATHER_API_KEY}
+      - LOCATION_LAT=${LOCATION_LAT}
+      - LOCATION_LON=${LOCATION_LON}
+      - LOCATION_NAME=${LOCATION_NAME}
+      - PORT=3000
+      - CLIENT_ORIGIN=http://localhost:3000
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
