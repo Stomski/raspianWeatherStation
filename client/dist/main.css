@@ -1,0 +1,217 @@
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: monospace;
+}
+
+.time {
+  font-size: 64px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.date {
+  font-size: 24px;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.current-weather {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.current-weather.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 24px;
+  color: #ccc;
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.temperature {
+  display: flex;
+  align-items: flex-start;
+}
+
+.temperature .value {
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.temperature .unit {
+  font-size: 40px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.weather-icon {
+  font-size: 100px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.detail-item .label {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.detail-item .value {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.weather-info {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-item .label {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.info-item .value {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.sun-times {
+  display: flex;
+  gap: 30px;
+}
+
+.sun-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.sun-item .icon {
+  font-size: 32px;
+}
+
+.sun-item .time {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.sun-item .label {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.app-container {
+  width: 1920px;
+  height: 1080px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.error-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ff4444;
+  text-align: center;
+}
+
+.error-container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.error-container p {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+#root {
+  width: 1920px;
+  height: 1080px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
